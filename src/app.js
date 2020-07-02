@@ -36,9 +36,6 @@ app.use(function validateBearerToken(req, res, next) {
 
 app.use('/api/posts', postsRouter)
 app.use('/api/comments', commentRouter)
-app.get('/workingRoute', (req, res) => {
-  res.send('Hello, this route works!')
-})
 app.get('/*', (req, res) => {
    res.send('Route not found')
 })
