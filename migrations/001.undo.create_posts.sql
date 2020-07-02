@@ -1,0 +1,2 @@
+ALTER TABLE IF EXISTS comments DROP COLUMN post_id;
+DROP TABLE IF EXISTS posts;
