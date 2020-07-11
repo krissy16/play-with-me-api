@@ -63,7 +63,5 @@ postRouter
         })
         .catch(next)
     })
-    .get((req, res, next) => {
-    })
 
 module.exports = postRouter
