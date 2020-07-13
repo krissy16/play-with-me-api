@@ -18,4 +18,4 @@ function makeCommentsArray(){
     ]
 }
 
-module.exports = { makeCommentsArray }
+module.exports = { makeCommentsArray };

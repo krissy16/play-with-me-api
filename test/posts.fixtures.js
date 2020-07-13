@@ -28,4 +28,4 @@ function makePostsArray(){
     ];
 }
 
-module.exports = { makePostsArray }
+module.exports = { makePostsArray };

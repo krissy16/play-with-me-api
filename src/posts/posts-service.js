@@ -1,6 +1,6 @@
 const PostsService = {
     getAllPosts(knex){
-        return knex.select('*').from('posts')
+        return knex.select('*').from('posts');
     },
     insertPost(knex, newPost){
         return knex
@@ -9,25 +9,25 @@ const PostsService = {
             .returning('*')
             .then(rows => {
               return rows[0]
-            })
+            });
     },
     getById(knex, id) {
         return knex
           .from('posts')
           .select('*')
           .where('id', id)
-          .first()
+          .first();
     },
     deletePost(knex, id) {
         return knex('posts')
           .where({ id })
-          .delete()
+          .delete();
     },
     updatePost(knex, id, newPost) {
         return knex('posts')
           .where({ id })
-          .update(newPost)
+          .update(newPost);
     },
-}
+};
 
-module.exports = PostsService
+module.exports = PostsService;
